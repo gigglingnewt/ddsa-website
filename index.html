@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dover & District Skittles Association</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" onclick="showPage('home'); setActiveNav('home');">
+        <div class="logo-icon"><img src="images/new_skits_logo_BLUE.png" alt="Dover & District Skittles Association Logo"></div>
+        <div class="logo-text">
+          <h2>Dover & District</h2>
+          <p>Skittles Association</p>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" data-page="home" onclick="return false;">Home</a></li>
+        <li><a href="#" data-page="news-events" onclick="return false;">News & Events</a></li>
+        <li><a href="#" data-page="fixtures" onclick="return false;">Fixtures</a></li>
+        <li><a href="#" data-page="results" onclick="return false;">Results</a></li>
+        <li><a href="#" data-page="tables" onclick="return false;">Tables</a></li>
+        <li><a href="#" data-page="winter-competitions" onclick="return false;">Winter Games</a></li>
+        <li><a href="#" data-page="rules" onclick="return false;">Rules</a></li>
+        <li><a href="#" data-page="history" onclick="return false;">History</a></li>
+        <li><a href="#" data-page="contacts" onclick="return false;">Contacts</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page active">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Dover & District Skittles Association</h1>
+        <p>Celebrating tradition, competition, and community</p>
+        <button class="btn" onclick="showPage('news-events'); setActiveNav('news-events');">Latest News & Events</button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>🎯 Competitions</h3>
+            <p>Track fixtures, results, and league tables for all our competitions throughout the season.</p>
+            <a href="#" onclick="showPage('fixtures'); setActiveNav('fixtures'); return false;" class="btn btn-secondary">View Fixtures</a>
+          </div>
+          <div class="card">
+            <h3>🤝 Community</h3>
+            <p>Connect with the current Dover skittles community. Join our Facebook group to stay in touch with fellow players and members.</p>
+            <a href="https://www.facebook.com/groups/1427425750897651" target="_blank" class="btn btn-secondary">Join Our Facebook Group</a>
+          </div>
+          <div class="card">
+            <h3>📅 Events</h3>
+            <p>Stay updated with the latest news, events, and announcements from the association.</p>
+            <a href="#" onclick="showPage('news-events'); setActiveNav('news-events'); return false;" class="btn btn-secondary">News & Events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--pale-blue);">
+      <div class="container text-center">
+        <h2>Learn More About Skittles</h2>
+        <p>Whether you're a seasoned player or new to the sport, we have all the information you need. Check out our comprehensive rules and regulations.</p>
+        <button class="btn btn-secondary" onclick="showPage('rules'); setActiveNav('rules');">View Rules & Regulations</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- NEWS & EVENTS PAGE -->
+  <div id="news-events" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>News & Events</h1>
+        <p>Stay updated with the latest news and upcoming events</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+          <!-- News Articles -->
+          <div>
+            <h2 class="section-title">Latest News</h2>
+            <div class="card">
+              <span class="badge">News</span>
+              <span style="font-size: 0.9rem; color: var(--light-text);">3 Jan 2026</span>
+              <h3>New Website Launch</h3>
+              <p>We are excited to announce the launch of our brand new website for the Dover & District Skittles Association!
+                Our new site features improved navigation, updated tables, and easier access to all the latest news and event information.
+                We hope you enjoy the new look and feel. Please bear with us as changes are made. This website is a large undertaking and will take time to perfect. </p>
+            </div>
+          </div>
+
+          <!-- Upcoming Events Sidebar -->
+          <div>
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="card">
+              <h4>Association AGM</h4>
+              <p style="margin: 0.5rem 0; font-size: 0.9rem;"><strong>📅 Tuesday 20th January 2026</strong></p>
+              <p style="margin: 0.5rem 0; font-size: 0.9rem;"><strong>🕖 19:00</strong></p>
+              <p style="margin: 0.5rem 0; font-size: 0.9rem;"><strong>📍 The Phoenix Railway & Social Club</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FIXTURES PAGE -->
+  <div id="fixtures" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>Fixtures</h1>
+        <p>Upcoming matches across all divisions</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card" style="background-color: var(--pale-blue); border-color: var(--mid-blue); padding: 3rem; text-align: center;">
+          <h2 style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 1rem;">📅 Fixtures Coming Soon</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">All fixtures for the upcoming season will be updated following the Monthly Skittles Meeting in <strong>March 2026</strong>.</p>
+          <p style="font-size: 1rem; color: var(--mid-blue); margin-top: 1.5rem;">Please check back soon for the complete fixture list.</p>
+          <a href="https://ddsa.leaguerepublic.com/index.html" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: 1.5rem; display: inline-block;">View Fixtures on League Republic</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- RESULTS PAGE -->
+  <div id="results" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>Results</h1>
+        <p>Recent match results across all divisions</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card" style="background-color: var(--pale-blue); border-color: var(--mid-blue); padding: 3rem; text-align: center;">
+          <h2 style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 1rem;">🏆 Match Results</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">Detailed match results for all divisions are available on our League Republic page.</p>
+          <a href="https://ddsa.leaguerepublic.com/index.html" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: 1.5rem; display: inline-block;">View Results on League Republic</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TABLES PAGE -->
+  <div id="tables" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>League Tables</h1>
+        <p>Current standings across all divisions</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <p style="text-align:center; color: var(--light-text); margin-bottom: 2rem;">
+          <a href="https://ddsa.leaguerepublic.com/index.html" target="_blank" rel="noopener">View on League Republic</a> for full match results
+        </p>
+
+        <!-- MEN'S DIVISION 1 -->
+        <h2 class="section-title">Men's Division One</h2>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>P</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Cricketers Cups</td><td>12</td><td>11</td><td>0</td><td>1</td><td><strong>22</strong></td></tr>
+              <tr><td>2</td><td>Tilmanstone</td><td>13</td><td>9</td><td>0</td><td>4</td><td><strong>18</strong></td></tr>
+              <tr><td>3</td><td>Red Lion Youth</td><td>13</td><td>9</td><td>0</td><td>4</td><td><strong>18</strong></td></tr>
+              <tr><td>4</td><td>Sportsman</td><td>12</td><td>8</td><td>0</td><td>4</td><td><strong>16</strong></td></tr>
+              <tr><td>5</td><td>D.W.M.C.</td><td>13</td><td>7</td><td>0</td><td>6</td><td><strong>14</strong></td></tr>
+              <tr><td>6</td><td>Phoenix Nomads</td><td>14</td><td>6</td><td>0</td><td>8</td><td><strong>12</strong></td></tr>
+              <tr><td>7</td><td>Ratling Club</td><td>13</td><td>4</td><td>0</td><td>9</td><td><strong>8</strong></td></tr>
+              <tr><td>8</td><td>Boars Head Lions</td><td>10</td><td>4</td><td>0</td><td>6</td><td><strong>8</strong></td></tr>
+              <tr><td>9</td><td>Crown &amp; Sceptre Lions</td><td>14</td><td>3</td><td>0</td><td>11</td><td><strong>6</strong></td></tr>
+              <tr><td>10</td><td>Phoenix B</td><td>12</td><td>2</td><td>0</td><td>10</td><td><strong>4</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="text-align:center; color: var(--light-text); font-size: 0.9rem; margin-top: 0.5rem;">Last updated 6th July 2026 11.00pm</p>
+
+        <!-- MEN'S DIVISION 2 -->
+        <h2 class="section-title">Men's Division Two</h2>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>P</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Boars Head A</td><td>15</td><td>12</td><td>0</td><td>3</td><td><strong>24</strong></td></tr>
+              <tr><td>2</td><td>Buckland Phoenix</td><td>14</td><td>11</td><td>0</td><td>3</td><td><strong>22</strong></td></tr>
+              <tr><td>3</td><td>The Chance</td><td>15</td><td>9</td><td>0</td><td>6</td><td><strong>18</strong></td></tr>
+              <tr><td>4</td><td>Red Lion OAPs</td><td>14</td><td>9</td><td>0</td><td>5</td><td><strong>18</strong></td></tr>
+              <tr><td>5</td><td>The Fox</td><td>15</td><td>8</td><td>0</td><td>7</td><td><strong>16</strong></td></tr>
+              <tr><td>6</td><td>Crown &amp; Sceptre A</td><td>13</td><td>8</td><td>0</td><td>5</td><td><strong>16</strong></td></tr>
+              <tr><td>7</td><td>Phoenix Bowmen</td><td>14</td><td>7</td><td>0</td><td>7</td><td><strong>14</strong></td></tr>
+              <tr><td>8</td><td>Kings Head B</td><td>15</td><td>5</td><td>0</td><td>10</td><td><strong>10</strong></td></tr>
+              <tr><td>9</td><td>The Archer</td><td>15</td><td>5</td><td>0</td><td>10</td><td><strong>10</strong></td></tr>
+              <tr><td>10</td><td>Rising Sun</td><td>14</td><td>4</td><td>0</td><td>10</td><td><strong>8</strong></td></tr>
+              <tr><td>11</td><td>Kings Head A</td><td>14</td><td>1</td><td>0</td><td>13</td><td><strong>2</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="text-align:center; color: var(--light-text); font-size: 0.9rem; margin-top: 0.5rem;">Last updated 6th July 2026 11.00pm</p>
+
+        <!-- WOMEN'S DIVISION -->
+        <h2 class="section-title">Women's Division</h2>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>P</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>PTS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Cricketers</td><td>14</td><td>11</td><td>0</td><td>3</td><td><strong>22</strong></td></tr>
+              <tr><td>2</td><td>Boars Head</td><td>14</td><td>10</td><td>0</td><td>4</td><td><strong>20</strong></td></tr>
+              <tr><td>3</td><td>Phoenix Nomads</td><td>14</td><td>10</td><td>0</td><td>4</td><td><strong>20</strong></td></tr>
+              <tr><td>4</td><td>Red Lion</td><td>15</td><td>9</td><td>0</td><td>6</td><td><strong>18</strong></td></tr>
+              <tr><td>5</td><td>The Ratling Club</td><td>13</td><td>9</td><td>0</td><td>4</td><td><strong>18</strong></td></tr>
+              <tr><td>6</td><td>Fox B</td><td>15</td><td>8</td><td>0</td><td>7</td><td><strong>16</strong></td></tr>
+              <tr><td>7</td><td>The Rising Sun</td><td>15</td><td>8</td><td>0</td><td>7</td><td><strong>16</strong></td></tr>
+              <tr><td>8</td><td>Crown &amp; Sceptre</td><td>14</td><td>8</td><td>0</td><td>6</td><td><strong>16</strong></td></tr>
+              <tr><td>9</td><td>Fox A</td><td>15</td><td>6</td><td>0</td><td>9</td><td><strong>12</strong></td></tr>
+              <tr><td>10</td><td>Archer</td><td>14</td><td>6</td><td>0</td><td>8</td><td><strong>12</strong></td></tr>
+              <tr><td>11</td><td>Kings Head A</td><td>14</td><td>5</td><td>0</td><td>9</td><td><strong>10</strong></td></tr>
+              <tr><td>12</td><td>Whitfield Club</td><td>14</td><td>2</td><td>0</td><td>12</td><td><strong>4</strong></td></tr>
+              <tr><td>13</td><td>Kings Head B</td><td>15</td><td>1</td><td>0</td><td>14</td><td><strong>2</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="text-align:center; color: var(--light-text); font-size: 0.9rem; margin-top: 0.5rem;">Last updated 6th July 2026 11.00pm</p>
+
+        <div class="card mt-4">
+          <h3>Scoring System</h3>
+          <p><strong>Win:</strong> 2 Points</p>
+          <p><strong>Draw:</strong> 1 Point</p>
+          <p><strong>Loss:</strong> 0 Points</p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- WINTER COMPETITIONS PAGE -->
+  <div id="winter-competitions" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>Winter Games</h1>
+        <p>Winter events and competitions for the association</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Winter Skittles</h2>
+        
+        <h3 class="section-title">Winter league table as of Jan 29th 2026</h3>
+        <img src="images/WINTER SKITS/WInter skits table wk7.png" alt="Winter league table as of Jan 22nd 2026" style="max-width: 100%; height: auto;">
+
+
+        <h3 class="section-title" style="margin-top: 3rem;">Winter Skittles Fixtures 2025-26</h3>
+        <img src="images/WINTER SKITS/Winter skits fixtures 25-26.jpeg" alt="Winter Skittles Fixtures 2025-26" style="max-width: 100%; height: auto;">
+
+        <h2 class="section-title">Winter Darts Competitions</h2>
+        
+        <h3 class="section-title">Results and table from Sunday 1st Feb 2026</h3>
+        <img src="images/WINTER DARTS/Winter Darts Table Feb1_2025.png" alt="Results and table from Sunday 25th Jan 2026" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
+
+        <h3 class="section-title">Winter Darts Fixtures 2025/26</h3>
+        <img src="images/WINTER DARTS/Winter Darts Fixtures 2025.png" alt="Winter Darts Fixtures 2025/26" style="max-width: 100%; height: auto;">
+      </div>
+    </section>
+  </div>
+
+  <!-- RULES PAGE -->
+  <div id="rules" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>Rules & Regulations</h1>
+        <p>Official rules governing skittles play</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="card" style="text-align: center;">
+          <h2>Official Documents</h2>
+          <p>Download the association's official rules and playing practices below.</p>
+          <div style="display:flex; gap:1rem; justify-content:center; margin-top:1rem; flex-wrap:wrap;">
+            <button type="button" class="btn btn-secondary" onclick="openPdf('pdfs/RULES-of-of-the-association-2001.pdf')">Association Rules and Terms</button>
+            <button type="button" class="btn btn-secondary" onclick="openPdf('pdfs/PLAYING-PRACTICES-for-teams-2008.pdf')">Playing Practices for Teams</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- HISTORY PAGE -->
+  <div id="history" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>Our History</h1>
+        <p>A legacy of tradition, competition, and community</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; padding: 3rem 0; text-align: center;">
+          
+          <!-- Construction Notice Box -->
+          <div style="background-color: #FFF; border: 4px solid #FFA500; border-radius: 10px; padding: 3rem 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative;">
+            
+            <!-- Caution Stripe Top -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 12px; background: repeating-linear-gradient(45deg, #FFA500, #FFA500 15px, #000 15px, #000 30px); border-radius: 6px 6px 0 0;"></div>
+            
+            <!-- Construction Icon -->
+            <div style="font-size: 5rem; margin: 1rem 0;">🚧</div>
+            
+            <!-- Main Message -->
+            <h2 style="font-size: 2.5rem; font-weight: 900; color: #333; margin: 1rem 0; text-transform: uppercase;">
+              UNDER CONSTRUCTION
+            </h2>
+            
+            <!-- Tools Icons -->
+            <div style="font-size: 2rem; margin: 1rem 0; opacity: 0.7;">
+              🛠️ ⚠️ 👷
+            </div>
+            
+            <!-- Notice Text -->
+            <div style="background-color: #FFF3CD; border-left: 4px solid #FFA500; padding: 1.5rem; margin: 2rem 0; color: #856404;">
+              <p style="margin: 0; font-weight: 600; font-size: 1.1rem;">This section is currently being renovated</p>
+            </div>
+            
+            <p style="color: #666; font-size: 1rem; margin: 1rem 0;">
+              Our history page is being reconstructed to bring you an even better experience.
+            </p>
+            
+            <p style="color: var(--mid-blue); font-size: 0.95rem; margin-bottom: 2rem;">
+              Please check back soon!
+            </p>
+            
+            <!-- Back Button -->
+            <button class="btn" onclick="showPage('home'); setActiveNav('home');" style="margin-top: 1rem;">
+              Return to Home
+            </button>
+
+            <!-- Caution Stripe Bottom -->
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 12px; background: repeating-linear-gradient(45deg, #FFA500, #FFA500 15px, #000 15px, #000 30px); border-radius: 0 0 6px 6px;"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CONTACTS PAGE -->
+  <div id="contacts" class="page">
+    <section class="section" style="background-color: var(--pale-blue); padding: 2rem;">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Get in touch with the Dover & District Skittles Association</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto 3rem auto;">
+          <!-- Contact Form -->
+          <div>
+            <h2>Send us a Message</h2>
+            <form id="contactForm" class="card">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <h2 class="section-title">Member Clubs</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Red Lion Bar &amp; Restaurant</h3>
+            <p><strong>📍</strong> 54 Charlton Green, Dover, CT16 2PS</p>
+            <p><strong>📞</strong> <a href="tel:+441304761010">01304 761010</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Archer Pub &amp; Chinese</h3>
+            <p><strong>📍</strong> 2 Sandwich Road, Whitfield, CT16 3LG</p>
+            <p><strong>📞</strong> <a href="tel:+441304825890">01304 825890</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Whitfield Club</h3>
+            <p><strong>📍</strong> 14 Napchester Road, Whitfield, CT16 3JD</p>
+            <p><strong>📞</strong> <a href="tel:+441304820642">01304 820642</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Ratling Aylesham &amp; District Social Club</h3>
+            <p><strong>📍</strong> Throwley House, Ratling Road, Aylesham, CT3 3HL</p>
+            <p><strong>📞</strong> <a href="tel:+441304841180">01304 841180</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Kings Head</h3>
+            <p><strong>📍</strong> Upper Street, Kingsdown, CT14 8BJ</p>
+            <p><strong>📞</strong> <a href="tel:+441304373915">01304 373915</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Fox Inn</h3>
+            <p><strong>📍</strong> 14 High Street, Temple Ewell, Dover, CT16 3DU</p>
+            <p><strong>📞</strong> <a href="tel:+441304823598">01304 823598</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Crown &amp; Sceptre</h3>
+            <p><strong>📍</strong> 25 Elms Vale Road, Dover, CT17 9NZ</p>
+            <p><strong>📞</strong> <a href="tel:+441304242770">01304 242770</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Boars Head</h3>
+            <p><strong>📍</strong> 46-48 Eaton Road, Dover CT17 9PB</p>
+            <p><strong>📞</strong> <a href="tel:+447788485764">07788 485764</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Chance Inn</h3>
+            <p><strong>📍</strong> Dover Road, Guston, Dover CT15 5EW</p>
+            <p><strong>📞</strong> <a href="tel:+441304206162">01304 206162</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Dover Working Men's Club</h3>
+            <p><strong>📍</strong> Jasper House, 253 London Road, Dover CT17 0SZ</p>
+            <p><strong>📞</strong> <a href="tel:+441304240773">01304 240773</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Tilmanstone Colliery Sports &amp; Welfare Club</h3>
+            <p><strong>📍</strong> Eythorne, Dover CT15 4AN</p>
+            <p><strong>📞</strong> <a href="tel:+441304831951">01304 831951</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Cricketers</h3>
+            <p><strong>📍</strong> Crabble Ave, Dover CT17 0JB</p>
+            <p><strong>📞</strong> <a href="tel:+441304206396">01304 206396</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Phoenix Railway Social Club</h3>
+            <p><strong>📍</strong> Crabble Road, Dover CT17 0QD</p>
+            <p><strong>📞</strong> <a href="tel:+441304822112">01304 822112</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Rising Sun</h3>
+            <p><strong>📍</strong> 8 Cliffe Road, Kingsdown, CT14 8AH</p>
+            <p><strong>📞</strong> <a href="tel:+441304373983">01304 373983</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Sportsman Pub</h3>
+            <p><strong>📍</strong> 238 London Road, Dover CT17 0SX</p>
+            <p><strong>📞</strong> <a href="tel:+441304208411">01304 208411</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Dover & District Skittles Association</h3>
+          <p>Promoting the traditional sport of skittles across Dover and the surrounding districts since its establishment.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#" onclick="showPage('fixtures'); setActiveNav('fixtures'); return false;">Fixtures</a></li>
+            <li><a href="#" onclick="showPage('results'); setActiveNav('results'); return false;">Results</a></li>
+            <li><a href="#" onclick="showPage('tables'); setActiveNav('tables'); return false;">Tables</a></li>
+            <li><a href="#" onclick="showPage('rules'); setActiveNav('rules'); return false;">Rules</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>For more information about the association, please visit our contacts page or reach out directly.</p>
+          <a href="#" onclick="showPage('contacts'); setActiveNav('contacts'); return false;" class="btn" style="background-color: var(--pale-blue); color: var(--primary-blue); margin-top: 1rem;">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dover & District Skittles Association. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
